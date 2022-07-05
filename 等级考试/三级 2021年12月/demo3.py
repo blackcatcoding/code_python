@@ -13,20 +13,20 @@
 x = input()
 s = x.split(',')
 a = []
-for i in range(len(s)):
+for i in range(________):
     a.append(int(s[i]))
 
 y = input()
-s = y.split(',')
+s = y.________
 b = []
 for i in range(len(s)):
     b.append(int(s[i]))
 
 ret = []
 i, j = 0, 0
-while len(a) >= i + 1 and len(b) >= j + 1:
+while len(a) >= i + 1 and ________:
     if a[i] <= b[j]:
-        ret.append(a[i])
+        ________
         i += 1
     else:
         ret.append(b[j])
@@ -35,6 +35,7 @@ while len(a) >= i + 1 and len(b) >= j + 1:
 if len(a) > i:
     ret += a[i:]
 if len(b) > j:
-    ret += b[j:]
+    ________
 
 print(ret)
+
